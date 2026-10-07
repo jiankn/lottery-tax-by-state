@@ -1026,5 +1026,1803 @@
       "take_home_on_1m": 603079,
       "notes": "Surcharge of 16.75% of New York State tax; figures include New York State tax"
     }
-  ]
+  ],
+  "rules": {
+    "method": "Tax on a prize = tax(other income + prize) - tax(other income), using progressive brackets [start_usd, rate]. Federal taxable income subtracts the standard deduction first; state brackets apply to income without a deduction. Each tax is rounded to whole dollars. Head of household uses the single state brackets.",
+    "federal": {
+      "brackets": {
+        "single": [
+          [
+            0,
+            0.1
+          ],
+          [
+            12400,
+            0.12
+          ],
+          [
+            50400,
+            0.22
+          ],
+          [
+            105700,
+            0.24
+          ],
+          [
+            201775,
+            0.32
+          ],
+          [
+            256225,
+            0.35
+          ],
+          [
+            640600,
+            0.37
+          ]
+        ],
+        "joint": [
+          [
+            0,
+            0.1
+          ],
+          [
+            24800,
+            0.12
+          ],
+          [
+            100800,
+            0.22
+          ],
+          [
+            211400,
+            0.24
+          ],
+          [
+            403550,
+            0.32
+          ],
+          [
+            512450,
+            0.35
+          ],
+          [
+            768700,
+            0.37
+          ]
+        ],
+        "headOfHousehold": [
+          [
+            0,
+            0.1
+          ],
+          [
+            17700,
+            0.12
+          ],
+          [
+            67450,
+            0.22
+          ],
+          [
+            105700,
+            0.24
+          ],
+          [
+            201750,
+            0.32
+          ],
+          [
+            256200,
+            0.35
+          ],
+          [
+            640600,
+            0.37
+          ]
+        ]
+      },
+      "standardDeduction": {
+        "single": 16100,
+        "joint": 32200,
+        "headOfHousehold": 24150
+      }
+    },
+    "states": {
+      "AK": {
+        "name": "Alaska",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "AL": {
+        "name": "Alabama",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.02
+            ],
+            [
+              500,
+              0.04
+            ],
+            [
+              3000,
+              0.05
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.02
+            ],
+            [
+              1000,
+              0.04
+            ],
+            [
+              6000,
+              0.05
+            ]
+          ]
+        }
+      },
+      "AR": {
+        "name": "Arkansas",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.02
+            ],
+            [
+              4600,
+              0.039
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.02
+            ],
+            [
+              4600,
+              0.039
+            ]
+          ]
+        }
+      },
+      "AZ": {
+        "name": "Arizona",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.025
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.025
+            ]
+          ]
+        }
+      },
+      "CA": {
+        "name": "California",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "CO": {
+        "name": "Colorado",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.044000000000000004
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.044000000000000004
+            ]
+          ]
+        }
+      },
+      "CT": {
+        "name": "Connecticut",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.02
+            ],
+            [
+              10000,
+              0.045
+            ],
+            [
+              50000,
+              0.055
+            ],
+            [
+              100000,
+              0.06
+            ],
+            [
+              200000,
+              0.065
+            ],
+            [
+              250000,
+              0.069
+            ],
+            [
+              500000,
+              0.0699
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.02
+            ],
+            [
+              20000,
+              0.045
+            ],
+            [
+              100000,
+              0.055
+            ],
+            [
+              200000,
+              0.06
+            ],
+            [
+              400000,
+              0.065
+            ],
+            [
+              500000,
+              0.069
+            ],
+            [
+              1000000,
+              0.0699
+            ]
+          ]
+        }
+      },
+      "DC": {
+        "name": "District of Columbia",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.04
+            ],
+            [
+              10000,
+              0.06
+            ],
+            [
+              40000,
+              0.065
+            ],
+            [
+              60000,
+              0.085
+            ],
+            [
+              250000,
+              0.0925
+            ],
+            [
+              500000,
+              0.0975
+            ],
+            [
+              1000000,
+              0.1075
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.04
+            ],
+            [
+              10000,
+              0.06
+            ],
+            [
+              40000,
+              0.065
+            ],
+            [
+              60000,
+              0.085
+            ],
+            [
+              250000,
+              0.0925
+            ],
+            [
+              500000,
+              0.0975
+            ],
+            [
+              1000000,
+              0.1075
+            ]
+          ]
+        }
+      },
+      "DE": {
+        "name": "Delaware",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              2000,
+              0.022000000000000002
+            ],
+            [
+              5000,
+              0.039
+            ],
+            [
+              10000,
+              0.048
+            ],
+            [
+              20000,
+              0.052000000000000005
+            ],
+            [
+              25000,
+              0.0555
+            ],
+            [
+              60000,
+              0.066
+            ]
+          ],
+          "joint": [
+            [
+              2000,
+              0.022000000000000002
+            ],
+            [
+              5000,
+              0.039
+            ],
+            [
+              10000,
+              0.048
+            ],
+            [
+              20000,
+              0.052000000000000005
+            ],
+            [
+              25000,
+              0.0555
+            ],
+            [
+              60000,
+              0.066
+            ]
+          ]
+        }
+      },
+      "FL": {
+        "name": "Florida",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "GA": {
+        "name": "Georgia",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0499
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0499
+            ]
+          ]
+        }
+      },
+      "HI": {
+        "name": "Hawaii",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.013999999999999999
+            ],
+            [
+              9600,
+              0.032
+            ],
+            [
+              14400,
+              0.055
+            ],
+            [
+              19200,
+              0.064
+            ],
+            [
+              24000,
+              0.068
+            ],
+            [
+              36000,
+              0.07200000000000001
+            ],
+            [
+              48000,
+              0.076
+            ],
+            [
+              125000,
+              0.079
+            ],
+            [
+              175000,
+              0.0825
+            ],
+            [
+              225000,
+              0.09
+            ],
+            [
+              275000,
+              0.1
+            ],
+            [
+              325000,
+              0.11
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.013999999999999999
+            ],
+            [
+              19200,
+              0.032
+            ],
+            [
+              28800,
+              0.055
+            ],
+            [
+              38400,
+              0.064
+            ],
+            [
+              48000,
+              0.068
+            ],
+            [
+              72000,
+              0.07200000000000001
+            ],
+            [
+              96000,
+              0.076
+            ],
+            [
+              250000,
+              0.079
+            ],
+            [
+              350000,
+              0.0825
+            ],
+            [
+              450000,
+              0.09
+            ],
+            [
+              550000,
+              0.1
+            ],
+            [
+              650000,
+              0.11
+            ]
+          ]
+        }
+      },
+      "IA": {
+        "name": "Iowa",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.038
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.038
+            ]
+          ]
+        }
+      },
+      "ID": {
+        "name": "Idaho",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              4811,
+              0.053
+            ]
+          ],
+          "joint": [
+            [
+              9622,
+              0.053
+            ]
+          ]
+        }
+      },
+      "IL": {
+        "name": "Illinois",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0495
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0495
+            ]
+          ]
+        }
+      },
+      "IN": {
+        "name": "Indiana",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.029500000000000002
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.029500000000000002
+            ]
+          ]
+        }
+      },
+      "KS": {
+        "name": "Kansas",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.052000000000000005
+            ],
+            [
+              23000,
+              0.0558
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.052000000000000005
+            ],
+            [
+              46000,
+              0.0558
+            ]
+          ]
+        }
+      },
+      "KY": {
+        "name": "Kentucky",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.035
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.035
+            ]
+          ]
+        }
+      },
+      "LA": {
+        "name": "Louisiana",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.03
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.03
+            ]
+          ]
+        }
+      },
+      "MA": {
+        "name": "Massachusetts",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.05
+            ],
+            [
+              1083150,
+              0.09
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.05
+            ],
+            [
+              1083150,
+              0.09
+            ]
+          ]
+        }
+      },
+      "MD": {
+        "name": "Maryland",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.02
+            ],
+            [
+              1000,
+              0.03
+            ],
+            [
+              2000,
+              0.04
+            ],
+            [
+              3000,
+              0.0475
+            ],
+            [
+              100000,
+              0.05
+            ],
+            [
+              125000,
+              0.0525
+            ],
+            [
+              150000,
+              0.055
+            ],
+            [
+              250000,
+              0.0575
+            ],
+            [
+              500000,
+              0.0625
+            ],
+            [
+              1000000,
+              0.065
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.02
+            ],
+            [
+              1000,
+              0.03
+            ],
+            [
+              2000,
+              0.04
+            ],
+            [
+              3000,
+              0.0475
+            ],
+            [
+              150000,
+              0.05
+            ],
+            [
+              175000,
+              0.0525
+            ],
+            [
+              225000,
+              0.055
+            ],
+            [
+              300000,
+              0.0575
+            ],
+            [
+              600000,
+              0.0625
+            ],
+            [
+              1200000,
+              0.065
+            ]
+          ]
+        }
+      },
+      "ME": {
+        "name": "Maine",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.057999999999999996
+            ],
+            [
+              27399,
+              0.0675
+            ],
+            [
+              64849,
+              0.07150000000000001
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.057999999999999996
+            ],
+            [
+              54849,
+              0.0675
+            ],
+            [
+              129749,
+              0.07150000000000001
+            ]
+          ]
+        }
+      },
+      "MI": {
+        "name": "Michigan",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0425
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0425
+            ]
+          ]
+        }
+      },
+      "MN": {
+        "name": "Minnesota",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0535
+            ],
+            [
+              33310,
+              0.068
+            ],
+            [
+              109430,
+              0.0785
+            ],
+            [
+              203150,
+              0.09849999999999999
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0535
+            ],
+            [
+              48700,
+              0.068
+            ],
+            [
+              193480,
+              0.0785
+            ],
+            [
+              337930,
+              0.09849999999999999
+            ]
+          ]
+        }
+      },
+      "MO": {
+        "name": "Missouri",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              1348,
+              0.02
+            ],
+            [
+              2696,
+              0.025
+            ],
+            [
+              4044,
+              0.03
+            ],
+            [
+              5392,
+              0.035
+            ],
+            [
+              6740,
+              0.04
+            ],
+            [
+              8088,
+              0.045
+            ],
+            [
+              9436,
+              0.047
+            ]
+          ],
+          "joint": [
+            [
+              1348,
+              0.02
+            ],
+            [
+              2696,
+              0.025
+            ],
+            [
+              4044,
+              0.03
+            ],
+            [
+              5392,
+              0.035
+            ],
+            [
+              6740,
+              0.04
+            ],
+            [
+              8088,
+              0.045
+            ],
+            [
+              9436,
+              0.047
+            ]
+          ]
+        }
+      },
+      "MS": {
+        "name": "Mississippi",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              10000,
+              0.04
+            ]
+          ],
+          "joint": [
+            [
+              10000,
+              0.04
+            ]
+          ]
+        }
+      },
+      "MT": {
+        "name": "Montana",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.047
+            ],
+            [
+              47500,
+              0.0565
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.047
+            ],
+            [
+              95000,
+              0.0565
+            ]
+          ]
+        }
+      },
+      "NC": {
+        "name": "North Carolina",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.039900000000000005
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.039900000000000005
+            ]
+          ]
+        }
+      },
+      "ND": {
+        "name": "North Dakota",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              48475,
+              0.0195
+            ],
+            [
+              244825,
+              0.025
+            ]
+          ],
+          "joint": [
+            [
+              80975,
+              0.0195
+            ],
+            [
+              298075,
+              0.025
+            ]
+          ]
+        }
+      },
+      "NE": {
+        "name": "Nebraska",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0246
+            ],
+            [
+              4130,
+              0.0351
+            ],
+            [
+              24760,
+              0.0455
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0246
+            ],
+            [
+              8250,
+              0.0351
+            ],
+            [
+              49530,
+              0.0455
+            ]
+          ]
+        }
+      },
+      "NH": {
+        "name": "New Hampshire",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "NJ": {
+        "name": "New Jersey",
+        "taxesLottery": true,
+        "exemptUpToUsd": 10000,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.013999999999999999
+            ],
+            [
+              20000,
+              0.0175
+            ],
+            [
+              35000,
+              0.035
+            ],
+            [
+              40000,
+              0.0553
+            ],
+            [
+              75000,
+              0.0637
+            ],
+            [
+              500000,
+              0.0897
+            ],
+            [
+              1000000,
+              0.1075
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.013999999999999999
+            ],
+            [
+              20000,
+              0.0175
+            ],
+            [
+              50000,
+              0.0245
+            ],
+            [
+              70000,
+              0.035
+            ],
+            [
+              80000,
+              0.0553
+            ],
+            [
+              150000,
+              0.0637
+            ],
+            [
+              500000,
+              0.0897
+            ],
+            [
+              1000000,
+              0.1075
+            ]
+          ]
+        }
+      },
+      "NM": {
+        "name": "New Mexico",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.015
+            ],
+            [
+              5500,
+              0.032
+            ],
+            [
+              16500,
+              0.043
+            ],
+            [
+              33500,
+              0.047
+            ],
+            [
+              66500,
+              0.049
+            ],
+            [
+              210000,
+              0.059000000000000004
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.015
+            ],
+            [
+              8000,
+              0.032
+            ],
+            [
+              25000,
+              0.043
+            ],
+            [
+              50000,
+              0.047
+            ],
+            [
+              100000,
+              0.049
+            ],
+            [
+              315000,
+              0.059000000000000004
+            ]
+          ]
+        }
+      },
+      "NV": {
+        "name": "Nevada",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "NY": {
+        "name": "New York",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.039
+            ],
+            [
+              8500,
+              0.044000000000000004
+            ],
+            [
+              11700,
+              0.051500000000000004
+            ],
+            [
+              13900,
+              0.054000000000000006
+            ],
+            [
+              80650,
+              0.059000000000000004
+            ],
+            [
+              215400,
+              0.06849999999999999
+            ],
+            [
+              1077550,
+              0.0965
+            ],
+            [
+              5000000,
+              0.10300000000000001
+            ],
+            [
+              25000000,
+              0.109
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.039
+            ],
+            [
+              17150,
+              0.044000000000000004
+            ],
+            [
+              23600,
+              0.051500000000000004
+            ],
+            [
+              27900,
+              0.054000000000000006
+            ],
+            [
+              161550,
+              0.059000000000000004
+            ],
+            [
+              323200,
+              0.06849999999999999
+            ],
+            [
+              2155350,
+              0.0965
+            ],
+            [
+              5000000,
+              0.10300000000000001
+            ],
+            [
+              25000000,
+              0.109
+            ]
+          ]
+        }
+      },
+      "OH": {
+        "name": "Ohio",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              26050,
+              0.0275
+            ]
+          ],
+          "joint": [
+            [
+              26050,
+              0.0275
+            ]
+          ]
+        }
+      },
+      "OK": {
+        "name": "Oklahoma",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              3750,
+              0.025
+            ],
+            [
+              4900,
+              0.035
+            ],
+            [
+              7200,
+              0.045
+            ]
+          ],
+          "joint": [
+            [
+              7500,
+              0.025
+            ],
+            [
+              9800,
+              0.035
+            ],
+            [
+              14400,
+              0.045
+            ]
+          ]
+        }
+      },
+      "OR": {
+        "name": "Oregon",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0475
+            ],
+            [
+              4550,
+              0.0675
+            ],
+            [
+              11400,
+              0.0875
+            ],
+            [
+              125000,
+              0.099
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0475
+            ],
+            [
+              9100,
+              0.0675
+            ],
+            [
+              22800,
+              0.0875
+            ],
+            [
+              250000,
+              0.099
+            ]
+          ]
+        }
+      },
+      "PA": {
+        "name": "Pennsylvania",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.030699999999999998
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.030699999999999998
+            ]
+          ]
+        }
+      },
+      "RI": {
+        "name": "Rhode Island",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0375
+            ],
+            [
+              82050,
+              0.0475
+            ],
+            [
+              186450,
+              0.0599
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0375
+            ],
+            [
+              82050,
+              0.0475
+            ],
+            [
+              186450,
+              0.0599
+            ]
+          ]
+        }
+      },
+      "SC": {
+        "name": "South Carolina",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0
+            ],
+            [
+              3640,
+              0.03
+            ],
+            [
+              18230,
+              0.06
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0
+            ],
+            [
+              3640,
+              0.03
+            ],
+            [
+              18230,
+              0.06
+            ]
+          ]
+        }
+      },
+      "SD": {
+        "name": "South Dakota",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "TN": {
+        "name": "Tennessee",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "TX": {
+        "name": "Texas",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "UT": {
+        "name": "Utah",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.045
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.045
+            ]
+          ]
+        }
+      },
+      "VA": {
+        "name": "Virginia",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.02
+            ],
+            [
+              3000,
+              0.03
+            ],
+            [
+              5000,
+              0.05
+            ],
+            [
+              17000,
+              0.0575
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.02
+            ],
+            [
+              3000,
+              0.03
+            ],
+            [
+              5000,
+              0.05
+            ],
+            [
+              17000,
+              0.0575
+            ]
+          ]
+        }
+      },
+      "VT": {
+        "name": "Vermont",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0335
+            ],
+            [
+              49400,
+              0.066
+            ],
+            [
+              119700,
+              0.076
+            ],
+            [
+              249700,
+              0.0875
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0335
+            ],
+            [
+              82500,
+              0.066
+            ],
+            [
+              199450,
+              0.076
+            ],
+            [
+              304000,
+              0.0875
+            ]
+          ]
+        }
+      },
+      "WA": {
+        "name": "Washington",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      },
+      "WI": {
+        "name": "Wisconsin",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.035
+            ],
+            [
+              15110,
+              0.044000000000000004
+            ],
+            [
+              51950,
+              0.053
+            ],
+            [
+              332720,
+              0.0765
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.035
+            ],
+            [
+              20150,
+              0.044000000000000004
+            ],
+            [
+              69260,
+              0.053
+            ],
+            [
+              443630,
+              0.0765
+            ]
+          ]
+        }
+      },
+      "WV": {
+        "name": "West Virginia",
+        "taxesLottery": true,
+        "exemptUpToUsd": null,
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.0222
+            ],
+            [
+              10000,
+              0.0296
+            ],
+            [
+              25000,
+              0.0333
+            ],
+            [
+              40000,
+              0.0444
+            ],
+            [
+              60000,
+              0.0482
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.0222
+            ],
+            [
+              10000,
+              0.0296
+            ],
+            [
+              25000,
+              0.0333
+            ],
+            [
+              40000,
+              0.0444
+            ],
+            [
+              60000,
+              0.0482
+            ]
+          ]
+        }
+      },
+      "WY": {
+        "name": "Wyoming",
+        "taxesLottery": false,
+        "exemptUpToUsd": null,
+        "brackets": null
+      }
+    },
+    "local": {
+      "NYC": {
+        "brackets": {
+          "single": [
+            [
+              0,
+              0.03078
+            ],
+            [
+              12000,
+              0.03762
+            ],
+            [
+              25000,
+              0.03819
+            ],
+            [
+              50000,
+              0.03876
+            ]
+          ],
+          "joint": [
+            [
+              0,
+              0.03078
+            ],
+            [
+              21600,
+              0.03762
+            ],
+            [
+              45000,
+              0.03819
+            ],
+            [
+              90000,
+              0.03876
+            ]
+          ],
+          "headOfHousehold": [
+            [
+              0,
+              0.03078
+            ],
+            [
+              14400,
+              0.03762
+            ],
+            [
+              30000,
+              0.03819
+            ],
+            [
+              60000,
+              0.03876
+            ]
+          ]
+        }
+      },
+      "YONKERS": {
+        "rateOfStateTax": 0.1675
+      },
+      "MD_COUNTY_AVERAGE": {
+        "rate": 0.030629,
+        "note": "Simple average of the 24 Maryland county top rates, applied to the whole prize"
+      }
+    }
+  }
 }

@@ -9,7 +9,11 @@ The data comes from [Jackpot Calculator](https://jackpotcalculator.com/), where 
 | File | Contents |
 |---|---|
 | `data/lottery-tax-by-state-2026.csv` | 53 rows: 50 states, D.C., New York City, Yonkers |
-| `data/lottery-tax-by-state-2026.json` | Same rows, plus metadata, assumptions and the federal rates |
+| `data/lottery-tax-by-state-2026.json` | Same rows, plus metadata, assumptions and the full federal, state and city brackets (`rules`) needed to reproduce every figure |
+
+## Notebook
+
+[`notebooks/powerball-lump-sum-vs-annuity.ipynb`](notebooks/powerball-lump-sum-vs-annuity.ipynb) uses the full brackets in the JSON file to compare the Powerball lump sum and the 30-year annuity after taxes in every state: take-home, present value at different discount rates and the break-even rate. Its last cell checks the results against the [Powerball calculator](https://jackpotcalculator.com/powerball-calculator/) to the cent. [Open it in Colab](https://colab.research.google.com/github/jiankn/lottery-tax-by-state/blob/main/notebooks/powerball-lump-sum-vs-annuity.ipynb) to change the jackpot, filing status or other income.
 
 ## Columns
 
