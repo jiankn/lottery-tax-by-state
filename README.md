@@ -1,5 +1,7 @@
 # Lottery tax by state (2026)
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23202118.svg)](https://doi.org/10.5281/zenodo.23202118)
+
 State and city tax on lottery winnings for all 50 states, Washington, D.C., New York City and Yonkers, in one CSV and one JSON file. Each row has the 2026 top income tax rate, whether the state taxes lottery prizes, the lottery withholding rate where the state publishes one, a link to the official source, and the take-home on a $1,000,000 prize.
 
 The data comes from [Jackpot Calculator](https://jackpotcalculator.com/), where the same figures power a lottery tax calculator for any prize and state. The [lottery tax by state table](https://jackpotcalculator.com/lottery-tax-by-state/) shows them with explanations.
@@ -42,4 +44,4 @@ Rates are checked at the start of each tax year and every quarter. A new tax yea
 
 ## License and citation
 
-[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit "Jackpot Calculator" with a link to https://jackpotcalculator.com/lottery-tax-by-state/. Citation details are in [`CITATION.cff`](./CITATION.cff); each release is archived with a DOI on Zenodo.
+[CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Credit "Jackpot Calculator" with a link to https://jackpotcalculator.com/lottery-tax-by-state/. Citation details are in [`CITATION.cff`](./CITATION.cff); each release is archived on Zenodo: [10.5281/zenodo.23202118](https://doi.org/10.5281/zenodo.23202118) (all versions).
