@@ -1,0 +1,13 @@
+{
+  "title": "Lottery tax by state (2026)",
+  "upload_type": "dataset",
+  "description": "<p>State and city tax on lottery winnings for all 50 states, Washington, D.C., New York City and Yonkers, as CSV and JSON. Each row gives the 2026 top income tax rate, whether the state taxes lottery prizes, the lottery withholding rate where the state publishes one (with a link to the official source and the date it was checked), and the take-home on a $1,000,000 lump sum for a single filer with no other income.</p><p>The figures are the ones used by the <a href=\"https://jackpotcalculator.com/\">Jackpot Calculator lottery tax calculator</a>; the <a href=\"https://jackpotcalculator.com/lottery-tax-by-state/\">lottery tax by state table</a> shows them with explanations.</p>",
+  "creators": [{ "name": "Jackpot Calculator" }],
+  "license": "cc-by-4.0",
+  "keywords": ["lottery", "taxes", "state income tax", "withholding", "Powerball", "Mega Millions"],
+  "related_identifiers": [
+    { "identifier": "https://jackpotcalculator.com/lottery-tax-by-state/", "relation": "isSupplementTo", "resource_type": "other" },
+    { "identifier": "https://jackpotcalculator.com/methodology/", "relation": "isDocumentedBy", "resource_type": "other" }
+  ],
+  "version": "2026.1"
+}
